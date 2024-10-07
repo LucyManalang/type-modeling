@@ -15,6 +15,7 @@ class JavaExpression(object):
 
         Subclasses must override this method.
         """
+        # TODO: implement this
         raise NotImplementedError(type(self).__name__ + " must override static_type()")
 
     def check_types(self):
@@ -25,6 +26,7 @@ class JavaExpression(object):
 
         Subclasses must override this method.
         """
+        # TODO: implement this
         raise NotImplementedError(type(self).__name__ + " must override check_types()")
 
 

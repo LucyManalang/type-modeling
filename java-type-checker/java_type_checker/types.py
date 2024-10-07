@@ -20,7 +20,7 @@ class JavaType(object):
 
         Subclasses must override this.
         """
-        raise NotImplementedError(type(self).__name__ + " must override is_subtype_of()")
+        return self is other
 
     def is_supertype_of(self, other):
         """Convenience counterpart to is_subtype_of().
@@ -33,6 +33,7 @@ class JavaType(object):
         Raises:
             NoSuchJavaMethod if the type has no method with the give name (or no methods at all)
         """
+        # TODO: implement this
         raise NoSuchJavaMethod("Type {0} does not have methods".format(self.name))
 
 
